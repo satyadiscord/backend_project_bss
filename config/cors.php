@@ -14,6 +14,13 @@ return [
     | To learn more: https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS
     |
     */
+    'paths' => ['api/*'],
+    'allowed_methods' => ['*'],
+
+    'allowed_origins' => ['http://localhost:3000', 'https://frontend-project-bss.vercel.app'],
+
+    'allowed_headers' => ['*'],
+
 
     'paths' => ['api/*', 'sanctum/csrf-cookie'],
 
